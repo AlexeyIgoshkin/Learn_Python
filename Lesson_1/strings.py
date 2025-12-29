@@ -44,3 +44,12 @@ print(txt_stripped)
 txt_with_quotes = '"Что"  "я"  могу"   "для"    вас "сделать'
 txt_with_quotes_stripped = txt.strip('"') # с аргументами уберет указанные символы
 print(txt_with_quotes_stripped)
+
+
+def chars_in_string_count(char: str, string: str):
+	return string.count(char)
+
+
+example_str = 'Today was a fantastic day!'
+print(chars_in_string_count('d', example_str))
+

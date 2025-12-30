@@ -24,3 +24,22 @@ print('Реверснутый', some_list)
 print(len(some_list))
 popped = some_list.pop(-1) # Удаляя элемент из списка, мы можем его сохранить в переменную
 print(some_list)
+
+# ИНВЕРСИЯ ПОСЛЕДОВАТЕЛЬНОСТЕЙ
+# Важно! Метод .reverse() инвертирует на месте ТОТ ЖЕ САМЫЙ СПИСОК. Возвращает None.
+list_for_reverse_method = [2, True, 4, False, 5, 'Six']
+print(list_for_reverse_method)
+list_for_reverse_method.reverse()
+print(list_for_reverse_method)
+
+# функция reversed() создает новый объект. Очень важно обернуть результат в нужную коллекцию (см. print)
+list_for_reversed_function = [2, True, 4, False, 5, 'Six']
+print(list_for_reversed_function)
+reversed_list_of_function = reversed(list_for_reversed_function)
+print(tuple(reversed_list_of_function))
+
+# Способ через слайсер. Хороший способ повыебываться на собесе
+list_for_sliced_reverse = [2, True, 4, False, 5, 'Six']
+print(list_for_sliced_reverse)
+sliced_reversed_list = list_for_sliced_reverse[::-1] # start и stop по умолчанию, а -1 - это обратный порядок
+print(sliced_reversed_list)

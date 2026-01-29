@@ -41,3 +41,10 @@ for x in origin_list: ДЖУНИОР
 new_list = [x * 3 for x in origin_list]: МИДДЛ
 new_list = list(map(lambda x: x * 2, origin_list)): СЕНЬОР
 '''
+
+# Немного практики
+my_list = [2, 45, 612, 562, 63, 634, 62, 4, 26, ]
+new_list1 = [x // 3 for x in my_list if x % 3 == 0]
+new_list2 = [x ** 2 if x % 3 == 0 else 'Ты пидор' for x in my_list]
+print(new_list1)
+print(new_list2)

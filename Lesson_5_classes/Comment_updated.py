@@ -9,6 +9,7 @@ class Comment:
 	def reset_votes_qty(self):
 		self.votes_qty = 0
 
+
 first_comment = Comment("First comment")  # votes_qty 0
 second_comment = Comment("First comment", 4)  # votes_qty 4
 
